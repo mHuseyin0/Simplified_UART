@@ -1,0 +1,4 @@
+Running: xsim.dir/UART_Receiver_Sim_behav/xsimk -simmode gui -wdb UART_Receiver_Sim_behav.wdb -simrunnum 0 -socket 56819
+Design successfully loaded
+Design Loading Memory Usage: 34432 KB (Peak: 35072 KB)
+Design Loading CPU Usage: 60 ms

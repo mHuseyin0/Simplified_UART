@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat May  4 16:01:05 2024
+# Process ID: 21192
+# Current directory: /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim
+# Command line: wbtcv -mode batch -source /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/webtalk.log
+# Journal file: /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/xsim_webtalk.tcl -notrace

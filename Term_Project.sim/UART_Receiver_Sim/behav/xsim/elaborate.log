@@ -1,0 +1,18 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/huseyin/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto fc16d83de4b14d3890103d2240108d3e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot UART_Receiver_Sim_behav xil_defaultlib.UART_Receiver_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_2_To_1
+Compiling module xil_defaultlib.Flip_Flop
+Compiling module xil_defaultlib.Shift_Register_8_Bit
+Compiling module xil_defaultlib.Register_8_Bit
+Compiling module xil_defaultlib.UART_Receiver
+Compiling module xil_defaultlib.UART_Receiver_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot UART_Receiver_Sim_behav
