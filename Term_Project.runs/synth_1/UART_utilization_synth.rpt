@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Sat May  4 21:38:00 2024
+| Date         : Sun May  5 10:51:52 2024
 | Host         : archlinux running 64-bit unknown
 | Command      : report_utilization -file UART_utilization_synth.rpt -pb UART_utilization_synth.pb
 | Design       : UART
@@ -27,18 +27,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+------------+-----------+-------+
-|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
-+-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   23 |     0 |          0 |     20800 |  0.11 |
-|   LUT as Logic          |   23 |     0 |          0 |     20800 |  0.11 |
-|   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |   68 |     0 |          0 |     41600 |  0.16 |
-|   Register as Flip Flop |   68 |     0 |          0 |     41600 |  0.16 |
-|   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
-| F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
-+-------------------------+------+-------+------------+-----------+-------+
++----------------------------+------+-------+------------+-----------+-------+
+|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
++----------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*                |   40 |     0 |          0 |     20800 |  0.19 |
+|   LUT as Logic             |   24 |     0 |          0 |     20800 |  0.12 |
+|   LUT as Memory            |   16 |     0 |          0 |      9600 |  0.17 |
+|     LUT as Distributed RAM |    0 |     0 |            |           |       |
+|     LUT as Shift Register  |   16 |     0 |            |           |       |
+| Slice Registers            |   76 |     0 |          0 |     41600 |  0.18 |
+|   Register as Flip Flop    |   76 |     0 |          0 |     41600 |  0.18 |
+|   Register as Latch        |    0 |     0 |          0 |     41600 |  0.00 |
+| F7 Muxes                   |    0 |     0 |          0 |     16300 |  0.00 |
+| F8 Muxes                   |    0 |     0 |          0 |      8150 |  0.00 |
++----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -57,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 68    |          Yes |       Reset |            - |
+| 76    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,17 +151,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   68 |        Flop & Latch |
+| FDRE     |   76 |        Flop & Latch |
 | OBUF     |   17 |                  IO |
+| SRL16E   |   16 |  Distributed Memory |
+| LUT3     |   12 |                 LUT |
 | IBUF     |   12 |                  IO |
-| LUT3     |   11 |                 LUT |
-| LUT6     |    7 |                 LUT |
-| LUT4     |    7 |                 LUT |
+| LUT6     |    8 |                 LUT |
+| LUT4     |    5 |                 LUT |
 | LUT1     |    4 |                 LUT |
 | CARRY4   |    4 |          CarryLogic |
 | LUT5     |    3 |                 LUT |
+| LUT2     |    2 |                 LUT |
 | BUFG     |    2 |               Clock |
-| LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

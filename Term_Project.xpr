@@ -353,6 +353,7 @@
       </Config>
     </FileSet>
     <FileSet Name="UART_Sim" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/UART_Sim" RelGenDir="$PGENDIR/UART_Sim">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/Flip_Flop.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>

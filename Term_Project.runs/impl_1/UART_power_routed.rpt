@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date             : Sat May  4 21:39:42 2024
+| Date             : Sun May  5 10:53:32 2024
 | Host             : archlinux running 64-bit unknown
 | Command          : report_power -file UART_power_routed.rpt -pb UART_power_summary_routed.pb -rpx UART_power_routed.rpx
 | Design           : UART
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.084        |
+| Total On-Chip Power (W)  | 0.082        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.013        |
+| Dynamic (W)              | 0.010        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -49,21 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      146 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       23 |     20800 |            0.11 |
-|   Register     |    <0.001 |       68 |     41600 |            0.16 |
-|   CARRY4       |    <0.001 |        4 |      8150 |            0.05 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       40 |       --- |             --- |
-| Signals        |    <0.001 |       95 |       --- |             --- |
-| I/O            |     0.011 |       29 |       106 |           27.36 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.084 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |    <0.001 |        3 |       --- |             --- |
+| Slice Logic             |    <0.001 |      176 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |       23 |     20800 |            0.11 |
+|   Register              |    <0.001 |       76 |     41600 |            0.18 |
+|   CARRY4                |    <0.001 |        4 |      8150 |            0.05 |
+|   LUT as Shift Register |    <0.001 |        8 |      9600 |            0.08 |
+|   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
+|   Others                |     0.000 |       45 |       --- |             --- |
+| Signals                 |    <0.001 |      103 |       --- |             --- |
+| I/O                     |     0.009 |       29 |       106 |           27.36 |
+| Static Power            |     0.072 |          |           |                 |
+| Total                   |     0.082 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -97,7 +98,7 @@ Table of Contents
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
 | Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
-| Internal nodes activity     | High       | User specified more than 25% of internal nodes         |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
 |                             |            |                                                        |                                                                                                                    |
 | Overall confidence level    | Low        |                                                        |                                                                                                                    |
@@ -141,7 +142,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| UART |     0.013 |
+| UART |     0.010 |
 +------+-----------+
 
 

@@ -6,12 +6,15 @@ module UART_Receiver
         
         
      logic active, ld;
-     logic [7:0] currentBits;
+     logic [7:0] currentBits, byte0, byte1, byte2;
      logic [3:0] counter;
-     
-     
+          
      Shift_Register_8_Bit RX(clock, received, 1'b0, 'd0, shiftOut, currentBits);
-     Register_8_Bit RXBUF(clock, ld, currentBits, out);
+     
+     Register_8_Bit RXBUF0(clock, ld, currentBits, byte0);
+     Register_8_Bit RXBUF1(clock, ld, byte0, byte1);
+     Register_8_Bit RXBUF2(clock, ld, byte1, byte2);
+     Register_8_Bit RXBUF3(clock, ld, byte2, out);
 
      always_ff @(posedge clock) begin;
         if (~active && ~received) begin
