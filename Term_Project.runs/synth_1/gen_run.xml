@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714895445">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714931533">
   <File Type="VDS-TIMING-PB" Name="UART_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="UART_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="UART.dcp"/>
@@ -11,7 +11,21 @@
   <File Type="PA-TCL" Name="UART.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Digit_Logic.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Flip_Flop.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Four_Digit_Driver.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -65,8 +79,8 @@
       <Option Name="TopModule" Val="UART"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/Stage_1_Config">
-    <File Path="$PSRCDIR/Stage_1_Config/new/UART_Config.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/Stage_4_Config">
+    <File Path="$PSRCDIR/Stage_4_Config/new/UART_Auto_Config.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

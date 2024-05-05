@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sat May  4 22:47:22 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun May  5 19:07:06 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2021.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3247384" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "22c5927a-e37f-4ad7-9af4-3adc5d770159" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "fc16d83de4b14d3890103d2240108d3e" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "13" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "17" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "unknown" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "unknown" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "1806.276 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2894.259 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "7.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -28,5 +28,5 @@ webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.07_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Memory -value "116428_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3185955650 -regid "" -xml /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 1615338737 -regid "" -xml /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/xsim.dir/UART_Receiver_Sim_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

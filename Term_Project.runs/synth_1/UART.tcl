@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -87,7 +89,9 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
+  /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Digit_Logic.sv
   /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Flip_Flop.sv
+  /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Four_Digit_Driver.sv
   /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/MUX_2_To_1.sv
   /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Register_8_Bit.sv
   /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv
@@ -104,8 +108,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_1_Config/new/UART_Config.xdc
-set_property used_in_implementation false [get_files /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_1_Config/new/UART_Config.xdc]
+read_xdc /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_4_Config/new/UART_Auto_Config.xdc
+set_property used_in_implementation false [get_files /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_4_Config/new/UART_Auto_Config.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

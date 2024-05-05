@@ -2,12 +2,11 @@
 
 module UART_Receiver
     (input clock, logic received,
-     output logic parityBit, [7:0] out);
-        
+     output logic parityBit, [7:0] byte0, byte1, byte2, out);
         
      logic active, ld;
-     logic [7:0] currentBits, byte0, byte1, byte2;
      logic [3:0] counter;
+     logic [7:0] currentBits;
           
      Shift_Register_8_Bit RX(clock, received, 1'b0, 'd0, shiftOut, currentBits);
      

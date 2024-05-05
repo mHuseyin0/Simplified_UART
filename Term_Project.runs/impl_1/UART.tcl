@@ -123,6 +123,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part_repo_paths {/home/huseyin/.Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store} [current_project]
@@ -139,7 +140,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/huseyin/VivadoProjects/Term_Project/Term_Project.runs/synth_1/UART.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_1_Config/new/UART_Config.xdc
+  read_xdc /home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/Stage_4_Config/new/UART_Auto_Config.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

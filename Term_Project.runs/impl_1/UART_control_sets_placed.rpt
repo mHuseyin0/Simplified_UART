@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Sun May  5 10:53:10 2024
+| Date         : Sun May  5 20:54:30 2024
 | Host         : archlinux running 64-bit unknown
 | Command      : report_control_sets -verbose -file UART_control_sets_placed.rpt
 | Design       : UART
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     9 |
-|    Minimum number of control sets                        |     9 |
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    20 |
+| Unused register locations in slices containing registers |    51 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     9 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     2 |
+| Total control sets |    16 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     1 |
-| >= 16              |     3 |
+| >= 16              |     5 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,30 +58,37 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              22 |            6 |
+| No           | No                    | No                     |              37 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              18 |            5 |
-| Yes          | No                    | No                     |              32 |            7 |
+| No           | Yes                   | No                     |              44 |           13 |
+| Yes          | No                    | No                     |              68 |           14 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               4 |            1 |
+| Yes          | Yes                   | No                     |              32 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |             Enable Signal             |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |                                       |                                       |                1 |              1 |         1.00 |
-|  sig_BUFG      |                                       | receptionModule/counter[3]_i_1__0_n_0 |                1 |              4 |         4.00 |
-|  sig_BUFG      | transmissionModule/sel                | transmissionModule/counter[3]_i_1_n_0 |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | btnD_IBUF                             |                                       |                2 |              8 |         4.00 |
-|  sig_BUFG      | btnD_IBUF                             |                                       |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG |                                       | counter[0]_i_1__1_n_0                 |                4 |             14 |         3.50 |
-|  sig_BUFG      | receptionModule/ld                    |                                       |                1 |             16 |        16.00 |
-|  sig_BUFG      | transmissionModule/initialize_reg_n_0 |                                       |                1 |             16 |        16.00 |
-|  sig_BUFG      |                                       |                                       |                5 |             21 |         4.20 |
-+----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
++-------------------------+---------------------------------+-------------------------------------+------------------+----------------+--------------+
+|       Clock Signal      |          Enable Signal          |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------+---------------------------------+-------------------------------------+------------------+----------------+--------------+
+| ~nolabel_line19/Q[3]    |                                 | nolabel_line19/isLetter_reg_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG          | sendingAll4_out                 | sendingAll6_out                     |                1 |              1 |         1.00 |
+|  sig_BUFG               |                                 | receptionModule/counter[3]_i_1_n_0  |                1 |              4 |         4.00 |
+|  nolabel_line19/ones__0 |                                 |                                     |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG          | nolabel_line19/anode[3]_i_1_n_0 |                                     |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG          | sendAllCounter[5]_i_2_n_0       | sendingAll6_out                     |                2 |              6 |         3.00 |
+|  sig_BUFG               | transmissionModule/active0      |                                     |                1 |              8 |         8.00 |
+|  sig_BUFG               | btnD_IBUF                       |                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG          |                                 |                                     |                6 |              8 |         1.33 |
+|  clk_IBUF_BUFG          | btnD_IBUF                       |                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG          |                                 | counter[0]_i_1_n_0                  |                4 |             14 |         3.50 |
+|  sig_BUFG               | transmissionModule/initialize   |                                     |                5 |             24 |         4.80 |
+|  sig_BUFG               |                                 |                                     |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG          |                                 | nolabel_line19/anode[3]_i_1_n_0     |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG          | active_reg_n_0                  | cooldownCounter[0]_i_1_n_0          |                7 |             25 |         3.57 |
+|  sig_BUFG               | receptionModule/ld              |                                     |                4 |             32 |         8.00 |
++-------------------------+---------------------------------+-------------------------------------+------------------+----------------+--------------+
 
 
