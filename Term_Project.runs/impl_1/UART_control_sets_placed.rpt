@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Sun May  5 20:54:30 2024
+| Date         : Mon May  6 04:27:05 2024
 | Host         : archlinux running 64-bit unknown
 | Command      : report_control_sets -verbose -file UART_control_sets_placed.rpt
 | Design       : UART
@@ -75,8 +75,8 @@ Table of Contents
 +-------------------------+---------------------------------+-------------------------------------+------------------+----------------+--------------+
 | ~nolabel_line19/Q[3]    |                                 | nolabel_line19/isLetter_reg_i_2_n_0 |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG          | sendingAll4_out                 | sendingAll6_out                     |                1 |              1 |         1.00 |
-|  sig_BUFG               |                                 | receptionModule/counter[3]_i_1_n_0  |                1 |              4 |         4.00 |
 |  nolabel_line19/ones__0 |                                 |                                     |                4 |              4 |         1.00 |
+|  sig_BUFG               |                                 | receptionModule/counter[3]_i_1_n_0  |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG          | nolabel_line19/anode[3]_i_1_n_0 |                                     |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG          | sendAllCounter[5]_i_2_n_0       | sendingAll6_out                     |                2 |              6 |         3.00 |
 |  sig_BUFG               | transmissionModule/active0      |                                     |                1 |              8 |         8.00 |

@@ -2,11 +2,11 @@
 
 module UART_Transmitter
     (input clock, logic init, ld, [7:0] dataBits,
-     output logic out, [7:0] byte0, byte1, byte2, buffer, currentBits, sendByte);
+     output logic out, [7:0] byte0, byte1, byte2, buffer);
      
      logic active, shiftOut, select, initialize, parityBit;
      logic [3:0] counter;
-     logic [7:0] currentBits, sendByte;
+     logic [7:0] sendByte, currentBits;
      
      bit isOddParity = 0;
 
