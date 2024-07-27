@@ -28,7 +28,8 @@ to date and can be used to write UART on Basys3 FPGA. <br>
 * Left and right buttons switches 7-Segment display between registers of a module.
 * 7-Segment display shows the registers as hexadecimal values. For example r3FF means r3 register contains 11111111.
 * The leftmost switch turns on 4-byte mode which will shift all 4 registers at once from transmission to reception module.
-* Block diagram:
+* Block diagram: <br>
+
 ![alt text](Block_Diagram.png)
 
 <ins>Todo</ins>
