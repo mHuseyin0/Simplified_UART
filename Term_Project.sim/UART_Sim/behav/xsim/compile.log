@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Flip_Flop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Flip_Flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/MUX_2_To_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_To_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Register_8_Bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_8_Bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Register_8_Bit
+INFO: [VRFC 10-2458] undeclared symbol load7, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:11]
+INFO: [VRFC 10-2458] undeclared symbol load6, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:12]
+INFO: [VRFC 10-2458] undeclared symbol load5, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:13]
+INFO: [VRFC 10-2458] undeclared symbol load4, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:14]
+INFO: [VRFC 10-2458] undeclared symbol load3, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:15]
+INFO: [VRFC 10-2458] undeclared symbol load2, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:16]
+INFO: [VRFC 10-2458] undeclared symbol load1, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:17]
+INFO: [VRFC 10-2458] undeclared symbol load0, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv:18]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2458] undeclared symbol parityBit, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART.sv:11]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART_Receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol shiftOut, assumed default net type wire [/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART_Receiver.sv:13]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART_Transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/UART_Sim/new/UART_Sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Sim

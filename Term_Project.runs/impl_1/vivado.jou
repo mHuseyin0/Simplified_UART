@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon May  6 04:26:18 2024
+# Process ID: 27032
+# Current directory: /home/huseyin/VivadoProjects/Term_Project/Term_Project.runs/impl_1
+# Command line: vivado -log UART.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART.tcl -notrace
+# Log file: /home/huseyin/VivadoProjects/Term_Project/Term_Project.runs/impl_1/UART.vdi
+# Journal file: /home/huseyin/VivadoProjects/Term_Project/Term_Project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source UART.tcl -notrace

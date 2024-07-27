@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+19:45:28
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.sim/UART_Receiver_Sim/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/UART_Receiver_Sim/new/UART_Receiver_Sim.sv,1714827599,systemVerilog,,,,UART_Receiver_Sim,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Flip_Flop.sv,1714676138,systemVerilog,,/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/MUX_2_To_1.sv,,Flip_Flop,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/MUX_2_To_1.sv,1714831833,systemVerilog,,/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Register_8_Bit.sv,,MUX_2_To_1,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Register_8_Bit.sv,1714905606,systemVerilog,,/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv,,Register_8_Bit,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/Shift_Register_8_Bit.sv,1714832588,systemVerilog,,/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART_Receiver.sv,,Shift_Register_8_Bit,,uvm,,,,,,
+/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/sources_1/new/UART_Receiver.sv,1714925188,systemVerilog,,/home/huseyin/VivadoProjects/Term_Project/Term_Project.srcs/UART_Receiver_Sim/new/UART_Receiver_Sim.sv,,UART_Receiver,,uvm,,,,,,
